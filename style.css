@@ -5,6 +5,7 @@
     
 }
 
+
 .container{
     width: 100%;
     margin: auto;
@@ -12,10 +13,10 @@
 
 .successContainer{
     width: 100%;
-    height: 45px;
-    border: 1px solid black;
+    height: 3rem;
+    /* border: 1px solid black; */
     background-color: rgb(104, 175, 33); 
-    transform: translate(0px, -50px);
+    transform: translate(0px, 0px);
     transition: 0.5s ease;
     /* display: none;    */
 }
@@ -38,7 +39,7 @@
 
 .wholeContainer{
     /* border: 1px solid black; */
-    width: 60%;
+    width: 100%;
     margin: auto;
 
 }
@@ -66,7 +67,7 @@
 
 .logoHeader h1{
     padding-top: 3px;
-    font-size: 54px;
+    font-size: 3.6rem;
     color:  #f38120;
     
 }
@@ -261,7 +262,61 @@ table {
 
  
 
+ @media(max-width: 700px){
+     .successContainer{
+         width: 39.3vh;
+         height: 30px;
 
+     }
+
+     .logoHeader{
+         width: 45vh;
+         margin-top: -45px;
+     }
+     .logoHeader img{
+         width: 25px;
+         height: 20px;
+         margin-right: 4px;
+     }
+     .logoHeader h1{
+         font-size: 20px;
+         padding-left: 0px;
+         padding-top: 0px;
+     }
+     .inputContainer{
+         margin-left: 0.6rem;
+     }
+
+     .inputContent{
+         margin-top: -25px;
+     }
+
+     .inputContent label{
+         font-size: 14px;
+        margin-top: 0px;
+     }
+
+     .inputContent input{
+         width: 36vh;
+         height: 25px;
+         font-size: 12px;
+         
+     }
+
+     .inputContent button{
+         width: 60px;
+         height: 22px;
+         font-size: 14px;
+         padding: 0px 0px;
+         margin-top: 0px;
+     }
+
+     .tableContainer{
+         justify-content: left;
+         text-align: left;
+         margin-left: 11px;
+     }
+ }
 
 
  
