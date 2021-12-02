@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Book List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <div class="successContainer">
+            <div class="success" id="message">
+
+            </div>
+        </div>
+
+    </section>
+    <div id="backdrop"></div>
+    <div id="confirmContainer">
+        <div class="details">
+            <h1>Book Details</h1>
+            <div class="extra" id='extraTitle'> 
+                <h1>Title : </h1>
+                <!-- <p>Javascript</p> -->
+            </div>
+            <div class="extra" id='extraAuthor'>
+                <h1>Author :</h1>
+                <!-- <p>Prashant</p> -->
+            </div>
+            <div class="extra" id='extraId'>
+                <h1>Book Id :</h1>
+                <!-- <p>JP1462</p> -->
+            </div>
+            <div class="buttonModal">
+                <button class="closeModal" id='close'>Close</button>
+                <button class="addModal" id='add'>Add</button>
+            </div>
+        </div>
+    </div>
+
+    </section>
+        <section class="container">
+            <section class="inputContainer">
+                <section class="headerContainer">
+                    <div class="logoHeader">
+                        <img src="image/book.jpg" alt="">
+                        <h1 class="heading">MY <span>BOOKS</span> LIBRARY</h1>
+                    </div>
+                </section>
+                <div class="inputContent">
+                    <label for="titleName">Title</label>
+                    <input type="text" id="titleName" name="titleName"><br><br>
+                    <label for="authorName">Author</label>
+                    <input type="text" id="authorName" name="authorName"><br><br>
+                    <label for="idName">Book Id</label>
+                    <input type="text" id="idName" name="idName"><br><br>
+                    <button id="addBtn" >Submit</button>
+                </div>
+                
+            </section>
+    
+            <section class="tableContainer">
+                <div class="tableContent">
+                    <h1>Books Added</h1>
+                    <table id="table">
+                        <tr>
+                          <th>Title</th>
+                          <th>Author</th>
+                          <th>Book Id</th>
+                          <th></th>
+                        </tr>
+                      </table>
+                </div>
+    
+            </section>
+
+    
+
+        </section>
+
+        
+    
+    
+
+
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
