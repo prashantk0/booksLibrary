@@ -14,7 +14,6 @@ const extraId = document.getElementById('extraId');
 const closeButton = document.getElementById('close');
 const addButton = document.getElementById('add');
 const messageContainer = document.getElementById('message');
-const messageDetail = document.createElement('p');
 
 SubmitBtn.addEventListener('click', ()=>{
   if( titleInput.value.trim() && authorInput.value.trim() && idInput.value.trim() ) {
@@ -38,8 +37,7 @@ const delete_func = (e)=>{
     const deleteId = document.getElementById(`delete${e}`);
     deleteId.parentElement.parentElement.remove();
     
-    messageDetail.innerHTML = 'Your Book has been Successfully Deleted!';
-    messageContainer.append(messageDetail);
+    message.innerHTML = 'Your Book has been Successfully Deleted!';
     success.style.transform = 'translate(0px,0px)';
     setTimeout(deleteSuccess, 2500);
 }
@@ -81,7 +79,7 @@ function addBookIntoTable(){
 
 function successMessage(){
     messageContainer.lastChild.remove();
-    
+    const messageDetail = document.createElement('p');
     
     messageDetail.innerHTML = 'Your Book has been Successfully Added!';
     messageContainer.append(messageDetail);
@@ -92,8 +90,7 @@ function successMessage(){
 function ErrorMessage(){
     messageContainer.lastChild.remove();
     success.style.backgroundColor = 'red';
-    messageDetail.innerHTML = 'ERROR! Please fill all the details';
-    messageContainer.append(messageDetail);
+    message.innerHTML = 'ERROR! Please fill all the details';
     success.style.transform = 'translate(0px,0px)';
     setTimeout(deleteSuccess, 2500);
 }

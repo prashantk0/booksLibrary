@@ -9,14 +9,17 @@
 .container{
     width: 100%;
     margin: auto;
+    
+
 }
 
 .successContainer{
     width: 100%;
-    height: 3rem;
+    height: 45px;
+    
     /* border: 1px solid black; */
     background-color: rgb(104, 175, 33); 
-    transform: translate(0px, 0px);
+    transform: translate(0px, -50px);
     transition: 0.5s ease;
     /* display: none;    */
 }
@@ -26,11 +29,11 @@
     font-size: 18px;
     text-align: left;
     justify-content: left;
-    margin-top: 10px;
     
 }
 
 .successContainer .success p{
+    padding-top: 14px;
     font-weight: 500;
     color: white;
     text-shadow: 0 0 3px #797878, 0 0 5px #707072;
@@ -262,7 +265,7 @@ table {
 
  
 
- @media(max-width: 700px){
+ /* @media(max-width: 700px){
      .successContainer{
          width: 39.3vh;
          height: 30px;
@@ -316,7 +319,7 @@ table {
          text-align: left;
          margin-left: 11px;
      }
- }
+ } */
 
 
  
